@@ -22,7 +22,7 @@ In the student.py file, create a Student class with the following attributes (do
 5. Add each student to a list called students.
 6. After all students have been added to the list, calculate the class average for lab, test, final exam, and overall score. Store in variables lab_avg, test_avg, final_exam_avg, and overall_avg.  
 
-<ins>**Important Notes**</ins>. 
+<ins>**Important Notes**</ins>  
 The data provided has bad data that you must clean up.  
 1. Missing data is represetned by a '#'. Those must be changed to 0 score.  
 2. If the score is greater than 100, change it to 100.  
