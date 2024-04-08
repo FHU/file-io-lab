@@ -18,7 +18,7 @@ In the student.py file, create a Student class with the following attributes (do
 1. Read in the "file_io_lab_data.csv" that is included in the repo.
 2. Each row in the file represents a single student with their lab, test, and final exam scores.
 3. For each row (student) in the file, create a student object from the provided data.
-4. You must then call the calc_overall_grade() and calc_letter_grade() methods for the methods.
+4. You must then call the calc_overall_grade() and calc_letter_grade() methods.
 5. Add each student to a list called students.
 6. After all students have been added to the list, calculate the class average for lab, test, final exam, and overall score. Store in variables lab_avg, test_avg, final_exam_avg, and overall_avg.  
 
