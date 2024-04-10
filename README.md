@@ -11,7 +11,7 @@ In the student.py file, create a Student class with the following attributes (do
 4. final_exam (default to 0): This represents the individual student's final exam score.
 5. overall (default to 0): This represents the individual student's overall grade in the class. 
 6. letter_grade (default to empty string): This represents the overall letter grade for the class (A,B, C, D, F)
-7. Write a method called calc_overall_grade(): that will calculate the student's overall grade as the unweighted average of their lab, test, and final exam scores. This will set the value of the overall attribute. (not return)
+7. Write a method called calc_overall_grade(): that will calculate the student's overall grade as the unweighted average of their lab, test, and final exam scores rounded to the nearest whole number. This will set the value of the overall attribute. (not return)
 8. Write a method called calc_letter_grade(): that will determine the student's letter grade based on their overall grade. This method will set the value of the letter grade attribute. (not return)
 
 <ins>**main.py**</ins>  
