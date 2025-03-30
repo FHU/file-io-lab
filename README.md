@@ -1,30 +1,50 @@
 # file-io-lab
-This is an independent lab.  
-
 In this lab you will read in a csv of simulated student grades, create student objects, and then calculate the class average for certain scores.  
+## Set Up
+<ol>
+	<li>Create new anaconda environment using these commands</li>
+	<ul>
+		<li>conda create --name fileio_lab python=3.13.1</li>
+		<li>conda activate fileio_lab</li>
+	</ul>
+	<li>Pull starter code from GitHub Classroom</li>
+	<li>Open in VS code and switch to the fileio_lab anaconda environment</li>
+	<li>When the lab is complete, push code to GitHub Classroom</li>
+</ol>
 
-<ins>**student.py**</ins>  
-In the student.py file, create a Student class with the following attributes (don't require these as parameters in the constructor):  
-1. name (default as empty string)
-2. lab (default to 0): This represents the individual student's average lab grade.
-3. test (default to 0):  This represents the individual student's average test grade.
-4. final_exam (default to 0): This represents the individual student's final exam score.
-5. overall (default to 0): This represents the individual student's overall grade in the class. 
-6. letter_grade (default to empty string): This represents the overall letter grade for the class (A,B, C, D, F)
-7. Write a method called calc_overall_grade(): that will calculate the student's overall grade as the unweighted average of their lab, test, and final exam scores rounded to the nearest whole number. This will set the value of the overall attribute. (not return)
-8. Write a method called calc_letter_grade(): that will determine the student's letter grade based on their overall grade. This method will set the value of the letter grade attribute. (not return)
+## Instructions
+<ol>
+  <li><strong>student.py</strong></li>
+  In the student.py file, create a Student class with the following attributes:  
+  <ol>
+    <li>name (required)</li>
+    <li>tests (required)</li>
+    <li>final_exam (required)</li>
+    <li>overall: This represents the student's overall grade and will get its value from the calc_overall_grade() method</li>
+    <li>letter_grade: This represents a student's letter grade for the class (A,B,C,D,F) and will get its value from the calc_letter_grade() method</li>
+  </ol>
+  <br>
+  Create the following methods:
+  <ol>
+    <li>calc_overall_grade(): This will return the student's overall grade as the unweighted average of their lab, test, and final exam scores rounded to the nearest whole number. </li>
+    <li>calc_letter_grade(): This will return the student's letter grade based on their overall grade. This uses a 10-point grading scale.</li>
+  </ol>
+  <br>
+  <li><strong>main.py</strong></li>
+  <ol>
+    <li>Import any files and read in the "file_io_lab_data.csv" that is included in the repo.</li>
+    <li>Each row in the file represents a single student with their lab, test, and final exam scores.</li>
+    <li>For each row (student) in the file, create a student object from the provided data.</li>
+    <li>Add each student to a list called students.</li>
+    <li>After all students have been added to the list, calculate the class average for lab, test, final exam, and overall score. Store in variables lab_avg, test_avg, final_exam_avg, and overall_avg. </li>
+  </ol>
+</ol>
 
-<ins>**main.py**</ins>  
-1. Read in the "file_io_lab_data.csv" that is included in the repo.
-2. Each row in the file represents a single student with their lab, test, and final exam scores.
-3. For each row (student) in the file, create a student object from the provided data.
-4. You must then call the calc_overall_grade() and calc_letter_grade() methods.
-5. Add each student to a list called students.
-6. After all students have been added to the list, calculate the class average for lab, test, final exam, and overall score. Store in variables lab_avg, test_avg, final_exam_avg, and overall_avg.  
-
-<ins>**Important Notes**</ins>  
-The data provided has bad data that you must clean up.  
-1. Missing data is represetned by a '#'. Those must be changed to 0 score.  
-2. If the score is greater than 100, change it to 100.  
-3. If the score is less than 0, change it to 0.  
-4. Remember to deal with the header row when processing the file.   
+## Important Notes
+The data provided has bad data that you must clean up.
+<ol>
+  <li>Missing data is represetned by a '#'. Those must be changed to 0 score. </li>
+  <li>If any score is greater than 100, change it to 100.</li>
+  <li>If any score is less than 0, change it to 0.</li>
+  <li>Remember to deal with the header row when processing the file. </li>
+</ol>  
